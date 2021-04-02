@@ -13,6 +13,7 @@ class VfExtractor(nn.Module):
         self.relu3 = nn.ReLU(inplace=True)
         self.conv4 = nn.Conv2d(80, 80, kernel_size=(3, 3), padding=(1, 1))
         self.relu4 = nn.ReLU(inplace=True)
+        self.gap = nn.AdaptiveAvgPool2d((1, 1))
 
     def forward(self, x):
         x = self.conv1(x)
@@ -23,5 +24,6 @@ class VfExtractor(nn.Module):
         x = self.relu3(x)
         x = self.conv4(x)
         x = self.relu4(x)
+        x = self.gap(x)
 
         return x
