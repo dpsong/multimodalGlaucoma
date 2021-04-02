@@ -15,7 +15,6 @@ class OctExtractor(nn.Module):
                 else:
                     layers.append(module)
         self.conv1 = nn.Sequential(*layers)
-
         self.conv2 = nn.Sequential(
             nn.Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False),
             nn.BatchNorm2d(
@@ -40,12 +39,10 @@ class OctExtractor(nn.Module):
                 track_running_stats=True),
             nn.ReLU(inplace=True),
         )
-
         self.conv3 = nn.Sequential(
             nn.Conv2d(64, 80, kernel_size=(3, 3), padding=(1, 1)),
             nn.ReLU(inplace=True),
         )
-        
         self.gap = nn.AdaptiveAvgPool2d((1, 1))
 
     def forward(self, x):
