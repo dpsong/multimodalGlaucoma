@@ -45,10 +45,13 @@ class OctExtractor(nn.Module):
             nn.Conv2d(64, 80, kernel_size=(3, 3), padding=(1, 1)),
             nn.ReLU(inplace=True),
         )
+        
+        self.gap = nn.AdaptiveAvgPool2d((1, 1))
 
     def forward(self, x):
         x = self.conv1(x)
         x = self.conv2(x)
         x = self.conv3(x)
+        x = self.gap(x)
 
         return x
