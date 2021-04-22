@@ -5,7 +5,7 @@ import scipy.io as sio
 from torch.utils.data import Dataset
 
 class OctVfDataset(Dataset):
-    """OctVfDataset"""
+    "OctVfDataset"
 
     def __init__(self, data_dir, text_file):
         self.vf_names = []
