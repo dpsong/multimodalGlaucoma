@@ -3,6 +3,7 @@ import torch.nn as nn
 import numpy as np
 
 class AttentionBlock(nn.Module):
+    "attention block"
 
     def __init__(self, in_channels=80):
         super(AttentionBlock, self).__init__()
@@ -18,7 +19,8 @@ class AttentionBlock(nn.Module):
         return x
 
 class AttentionNet(nn.Module):
-
+    "Network head of attention module."
+    
     def __init__(self):
         super(AttentionNet, self).__init__()
         self.att = AttentionBlock()
