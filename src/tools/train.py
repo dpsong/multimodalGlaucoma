@@ -58,7 +58,7 @@ def train(net, trainloader, criterion, optimizer, epoch, device='cpu'):
         oct_datas = sample_batched['oct_data']
         vf_datas = sample_batched['vf_data']
         labels = sample_batched['label']
-
+        
         oct_datas = oct_datas.to(device)
         vf_datas = vf_datas.to(device)
         labels = labels.to(device)
@@ -87,6 +87,7 @@ def train(net, trainloader, criterion, optimizer, epoch, device='cpu'):
 
 def main():
     args = get_args()
+    # set random seeds
     fix_seed(args.seed)
     device = torch.device("cuda:{}".format(args.deviceID) if torch.cuda.
                           is_available() else "cpu")
