@@ -5,13 +5,14 @@ import scipy.io as sio
 from torch.utils.data import Dataset
 
 class OctVfDataset(Dataset):
-    """OctVfDatasetCroVal"""
+    """OctVfDataset"""
 
     def __init__(self, data_dir, text_file):
         self.vf_names = []
         self.oct_names = []
         self.labels = []
-
+        
+        # load annotations
         with open(text_file, 'r') as fin:
             for line in fin:
                 line = line.strip()
@@ -28,9 +29,12 @@ class OctVfDataset(Dataset):
         return (len(self.labels))
 
     def __getitem__(self, idx):
+        # load OCT data
         oct_data = np.load(self.oct_names[idx])
+        # load VF-PDP data
         vf_data = sio.loadmat(self.vf_names[idx])
-
+        
+        # convert objects to Tensor
         vf_data = torch.from_numpy(vf_data)
         oct_data = torch.from_numpy(oct_data)
         label = self.labels[idx]
