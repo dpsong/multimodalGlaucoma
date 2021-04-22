@@ -3,7 +3,7 @@ import torch.nn as nn
 
 
 class FCNet(nn.Module):
-    """Network head of classifier."""
+    "Network head of classifier."
     
     def __init__(self, in_channels=80):
         super(FCNet, self).__init__()
