@@ -9,9 +9,9 @@ Example of the paired VF-OCT data:
 <br>
 VF data: 
 <br>
-![image](https://user-images.githubusercontent.com/57675424/115985170-2dd19f00-a5dd-11eb-9a1c-fcdb775ccfb5.png)
+<div align=center>![image](https://user-images.githubusercontent.com/57675424/115985170-2dd19f00-a5dd-11eb-9a1c-fcdb775ccfb5.png)
 <br>
 OCT data: 
 <br>
-![image](https://user-images.githubusercontent.com/57675424/115985206-52c61200-a5dd-11eb-9283-df25ced78fb9.png)
+<div align=center>![image](https://user-images.githubusercontent.com/57675424/115985206-52c61200-a5dd-11eb-9283-df25ced78fb9.png)
 
