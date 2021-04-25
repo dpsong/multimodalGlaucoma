@@ -5,7 +5,7 @@ This repository contains a Python implementation for "Multi-modal Machine Learni
 See tools folder for notebooks for training. Requirements:  PyTorch 1.4.0 and Python3.
 <br>
 <br>
-Example of the paired VF-OCT data:
+**Example of the paired VF-OCT data:**
 <br>
 VF data: 
 <br>
