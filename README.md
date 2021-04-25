@@ -7,5 +7,5 @@ See tools folder for notebooks for training. Requirements:  PyTorch 1.4.0 and Py
 <br>
 **Example of the paired VF-OCT data:**
 <br>
-![image](https://user-images.githubusercontent.com/57675424/115986497-08e02a80-a5e3-11eb-8b79-ca2270ff23f7.png)
-
+<br>
+![image](https://user-images.githubusercontent.com/57675424/115986549-46dd4e80-a5e3-11eb-9881-0ccb0c971f8f.png)
