@@ -1,6 +1,7 @@
 # multimodalGlaucoma
 This repository contains a Python implementation for "Multi-modal Machine Learning using Visual Fields and Peripapillary Circular OCT Scans in Detection of Glaucomatous Optic Neuropathy"
 <br>
+<br>
 See tools folder for notebooks for training.
 <br>
 Requirements:  PyTorch 1.4.0 and Python3.
