@@ -1,7 +1,7 @@
 ## Introduction
 This repository contains a Python implementation for "Multi-modal Machine Learning using Visual Fields and Peripapillary Circular OCT Scans in Detection of Glaucomatous Optic Neuropathy".
 
-Example of the paired VF-OCT data:
+Example of the paired VF-OCT data (Raw data):
 <p align="center">
    <img src="https://user-images.githubusercontent.com/57675424/116193054-54204780-a761-11eb-86b6-01c7efc9c35a.png"  width="720"/>
 </p>
