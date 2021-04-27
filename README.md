@@ -5,8 +5,8 @@ Example of the paired VF-OCT data:
    <img src="https://user-images.githubusercontent.com/57675424/116193054-54204780-a761-11eb-86b6-01c7efc9c35a.png"  width="720"/>
 </p>
 
-### Setup & Usage for the Code
-1. Check dependencies:
+### Usage for the Code
+1. Dependencies:
    ```shell
    python==3.5.2
    PyTorch==1.4.0
