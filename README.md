@@ -4,8 +4,9 @@ This repository contains a Python implementation for "Multi-modal Machine Learni
 <br>
 Example of the paired VF-OCT data:
 <br>
+<p align="center">
 ![image](https://user-images.githubusercontent.com/57675424/116193054-54204780-a761-11eb-86b6-01c7efc9c35a.png)
-
+</p>
 
 ### Setup & Usage for the Code
 1. Check dependencies:
