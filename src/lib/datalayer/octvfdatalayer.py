@@ -1,3 +1,8 @@
+"""
+This script loads the paired VF-OCT data (after preprocessing) and annotations.
+You may need to write your own script to handle your custom datasets.
+"""
+
 import os
 import torch
 import numpy as np
