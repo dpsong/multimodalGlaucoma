@@ -1,7 +1,7 @@
 """
 Multimodal glaucoma classification training Script.
 This script runs the training.
-You may want to write your own script with your datasets and other customizations.
+You may need to write your own script with your datasets and other customizations.
 """
 
 import os
