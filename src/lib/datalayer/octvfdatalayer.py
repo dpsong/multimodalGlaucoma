@@ -15,7 +15,7 @@ class OctVfDataset(Dataset):
     def __init__(self, data_dir, text_file):
         """
         Args:
-            data_dir:  path to the VF-OCT data. 
+            data_dir:  root path to the VF-OCT data. 
             text_file: path to the text file.
         """
         self.vf_names = []
