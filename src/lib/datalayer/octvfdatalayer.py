@@ -13,6 +13,11 @@ class OctVfDataset(Dataset):
     "OctVfDataset"
 
     def __init__(self, data_dir, text_file):
+        """
+        Args:
+            data_dir:  path to the VF-OCT data. 
+            text_file: path to the text file.
+        """
         self.vf_names = []
         self.oct_names = []
         self.labels = []
@@ -31,6 +36,7 @@ class OctVfDataset(Dataset):
                 self.labels.append(label)
 
     def __len__(self):
+        # number of samples in the dataset
         return (len(self.labels))
 
     def __getitem__(self, idx):
